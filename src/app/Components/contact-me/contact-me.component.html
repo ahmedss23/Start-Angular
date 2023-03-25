@@ -1,0 +1,61 @@
+<section class="p-3 pb-5">
+  <div class="container">
+    <div class="col-md-10 text-center text-primary py-5 m-auto">
+      <h2 class="mt-5 mb-4 display-4 text-primary fw-bold">CONTACT ME</h2>
+      <div class="divider border border-2 border-primary col-md-3 m-auto position-relative mb-5">
+        <i class="fa-solid fa-star position-absolute translate-middle px-3 bg-white fs-2"></i>
+      </div>
+      <div class="container col-md-8 g-4 text-start">
+        <form action="" (submit)="submitHandler($event)">
+          <div class="row">
+            <div class="col-12 py-1 border-bottom border-1 pb-5">
+              <div class="col-12 px-2 position-relative overflow-hidden">
+                <label class="position-relative" style="transform: translateY(100%);" for="name">Name:</label>
+              </div>
+              <input type="text" name="name" id="name" class="form-control px-2 border-0" placeholder="Name" (input)="inputHandler($event)" (focus)="focusHandler($event)" (blur)="blurHandler($event)" autocomplete="off">
+              <ul class="text-danger d-none">
+                <li>Please enter your name.</li>
+              </ul>
+            </div>
+            <div class="col-12 py-1 border-bottom border-1 pb-5">
+              <div class="col-12 px-2 position-relative overflow-hidden">
+                <label class="position-relative" style="transform: translateY(100%);" for="email">Email:</label>
+              </div>
+              <input type="text" name="email" id="email" class="form-control px-2 border-0" placeholder="Email Address" (input)="inputHandler($event)" (focus)="focusHandler($event)" (blur)="blurHandler($event)" autocomplete="off">
+              <ul class="text-danger d-none">
+                <li>Please enter your email address.</li>
+              </ul>
+            </div>
+            <div class="col-12 py-1 border-bottom border-1 pb-5">
+              <div class="col-12 px-2 position-relative overflow-hidden">
+                <label class="position-relative" style="transform: translateY(100%);" for="phone">Phone:</label>
+              </div>
+              <input type="text" name="phone" id="phone" class="form-control px-2 border-0" placeholder="Phone Number" (input)="inputHandler($event)" (focus)="focusHandler($event)" (blur)="blurHandler($event)" autocomplete="off">
+              <ul class="text-danger d-none">
+                <li>Please enter your phone number.</li>
+              </ul>
+            </div>
+            <div class="col-12 py-1 border-bottom border-1 pb-5">
+              <div class="col-12 px-2 position-relative overflow-hidden">
+                <label class="position-relative" style="transform: translateY(100%);" for="message">Message:</label>
+              </div>
+              <textarea name="message" id="message" class="form-control px-2 border-0" placeholder="Message" rows="5" (input)="inputHandler($event)" (focus)="focusHandler($event)" (blur)="blurHandler($event)" autocomplete="off"></textarea>
+              <ul class="text-danger d-none">
+                <li>Please enter a message.</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <div class="alert alert-danger d-none">
+                <p>Sorry Zahir, it seems that my mail server is not responding. Please try again later!</p>
+              </div>
+            </div>
+            <div class="col-12 pt-3">
+              <button class="btn btn-success border-0 btn-lg bg-success">Send</button>
+            </div>
+          </div>
+      </form>
+
+    </div>
+    </div>
+  </div>
+</section>
